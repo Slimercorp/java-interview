@@ -15,6 +15,7 @@
 + [Базы данных](#Базы-данных) [Junior]
 + [SQL](#sql) [Junior]
 + [JDBC](#jdbc) [Junior]
++ [Spring](#Spring) [Junior]
 + [Тестирование](#Тестирование) [Junior]
 + [Журналирование](#Журналирование) [Middle+]
 + [UML](#uml) [Middle+]
@@ -632,6 +633,18 @@
 + [Как осуществляется запрос к базе данных и обработка результатов?](jdbc.md#Как-осуществляется-запрос-к-базе-данных-и-обработка-результатов) [Junior]
 + [Как вызвать хранимую процедуру?](jdbc.md#Как-вызвать-хранимую-процедуру) [Middle+]
 + [Как закрыть соединение с базой данных?](jdbc.md#Как-закрыть-соединение-с-базой-данных) [Middle+]
+
+[к оглавлению](#Вопросы-для-собеседования-на-java-developer)
+
+## Spring  [Junior]
+
++ [Spring Core](spring.md#Spring-Core) [Junior]
++ [Spring MVC](spring.md#Spring-MVC) [Junior]
++ [Spring Validator](spring.md#Spring-Validator) [Junior]
++ [Spring Boot](spring.md#Spring-Boot) [Junior]
++ [Spring Security](spring.md#Spring-Security) [Junior]
++ [Spring REST](spring.md#Spring-REST) [Junior]
++ [JWT](spring.md#JWT) [Junior]
 
 [к оглавлению](#Вопросы-для-собеседования-на-java-developer)
 
