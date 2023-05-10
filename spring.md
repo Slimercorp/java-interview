@@ -227,7 +227,7 @@ __Java аннотация__ - это специальный тип коммен�
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/fcb9649a-e134-4ba7-badd-969eda6fbbd2)
 
-__Аннотация @Component__
+## Аннотация @Component
 + Помечаем ей класс, если хотим, чтобы Spring создал бин из этого класса.
 + Именно эту аннотацию Spring ищет, когда сканирует все ваши классы.
 + Можно указать `id` для создаваемого бина, можно не указывать (тогда будет название `название_класса_с_маленькой_буквы`).
@@ -240,7 +240,7 @@ __Аннотация @Component__
 
 Теперь при запуске приложения Spring отсканирует все классы в пакете `springcourse` и создаст бины классов, помеченных аннотацией `@Component`.
 
-__Аннотация @Autowired__
+## Аннотация @Autowired
 Эта аннотация осущществляет внедрение зависимостей.
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/17b78544-93fc-415d-979d-a8c6b64a5685)
@@ -255,22 +255,76 @@ __Аннотация @Autowired__
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/df84209f-2f15-4814-9757-0600fb776e62)
 
+## Аннотация @Qualifier
+Решает проблему неоднозначности, когда для внедрения подходят несколько бинов.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/c552d69e-dbcf-4094-9640-6f8e21411cf2)
+
+Эту аннотацию можно использовать на :
++ Конструкторах
++ Сеттерах
++ Полях
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/63d80334-b6e6-4e47-8279-4218283e9175)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/f2b55a1e-7488-4bf3-ac30-0a057e42fddb)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/99751ac7-a986-4c53-8603-aba18ab3ff03)
 
 
+## Аннотация @Value
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/65b54e68-418e-408d-8388-c5bc72b2da3c)
 
+Тоже самое можно делать с помощью `@Value`.
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/22f1be1d-5f90-40a5-906b-09ffb07e75ed)
 
+Первые два шага идентичны, но внедрение осуществляем с помощью `@Value`. Аннотируем (помечаем) поля, в аргументы посталяем название ключа. Значение, которое лежит по этому ключу будет внедрено в соответствующее поле.
 
+## Аннотация @Scope
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/01867ddd-13f6-4341-8fd3-6e202a5c3aa4)
 
+Конфигурацию области видимости мы тоже можем настроить с помощью аннотаций - для этого и существует @Scope.
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/8b00b9bb-e08f-4695-a07b-a955c6d220fb)
 
+## Аннотации @PostConstruct и @PreDestroy
+Есть два метода из жизненного цикла бина - init-method и destroy-method. В Spring аннотации `@PostConstruct` и `@PreDestroy` делают тоже самое. 
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/104d665f-253b-4a54-a976-203b708abf85)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/6681706a-1572-46bb-9b61-bc88abe10684)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/d0e885b7-4750-4cd3-a92e-8888f0eae294)
 
+## Spring конфигурация с помощью Java кода
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/93c651f8-ddaf-4f67-b938-ebc50453be8a)
+
+__Аннотация @Configuration__
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/ce103b2c-a692-48d3-a24e-59c22c15631d)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/e7e92b79-ac21-4fde-b271-ff5970e33e8d)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/690bbbd5-10cb-468d-ac04-147f0446a734)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/7360c04f-3668-4678-ae75-61e4463c1546)
+
+Раньше использовали  класс `ClassPathXmlApplicationContext` и указывали ему путь до конфигурационного xml файла. Теперь используем другой класс `AnnotationConfigApplicationContext`, ему на вход передаем конфигурационный класс и получаем доступ к контесту, из которого впоследствии можем получать бины.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/13ab6db6-8a8d-4db8-a9de-e0888b222ba0)
+
+__@Bean__
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/45adc3af-2b19-46c5-b213-2ab548e4fb49)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/d7656935-1399-40d3-bb1e-231daec8bc77)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/36ac88d1-7c79-46f2-97b0-b4620bd26b40)
+
+@PropertySource указывает путь до файла с нашими входными значениями.
 
 
 
