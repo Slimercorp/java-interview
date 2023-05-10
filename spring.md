@@ -142,15 +142,15 @@ __Способы внедрения зависимостей:__
 ![image](https://user-images.githubusercontent.com/116163780/237059674-d64108fd-306a-4e25-9efb-9a726126303d.png)
 
 __Что такое scope?__
-scope задает то, как Spring будет создавать ваши бины.
+Scope задает то, как Spring будет создавать ваши бины.
 Есть такой scope, который называется __Singleton__, он используется по умолчанию.
 Singleton - это паттерн программирования.
 
-не указывает scope, по умолчанию Singleton:
+Если не указывать scope, то по умолчанию Singleton:
 
 ```xml
 <bean id="musicBean"
-		class="ru.kirillova.springcourse.ClassicalMusic">
+	class="ru.kirillova.springcourse.ClassicalMusic">
 </bean>
 ```
 
