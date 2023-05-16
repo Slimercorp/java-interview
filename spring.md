@@ -457,11 +457,68 @@ __@Bean__
 
 
 
-
-
-
-
 ## Spring MVC
+__Spring MVC__ - это один из компонентов Spring Framework, который позволяет разрабатывать web приложения на Java.
+Spring MVC предполагает разработку web приложений с использованием архитектуры Model - View - Controller.
+Разрабатывая web приложения с помощью Spring MVC, мы можем использовать  все, что дает нам Spring Core - бины, DI, и так далее.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/3b5a29f9-980c-454e-bd21-0aad40d370b1)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9f53d6d7-ef29-46b2-929b-b4c1c24ebaa6)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/a8c5eced-f644-4892-b711-32e0c90a5169)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9480ac94-ca77-4163-8ad9-2e852d87201a)
+
+Controller помечается аннотацией @Controller
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9f88a82c-290b-4b99-814a-2adeeace9528)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/b317eaeb-006c-4f42-b8c2-bc562a482860)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Spring Validator
 
