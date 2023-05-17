@@ -535,7 +535,31 @@ Controller - это обычный Java класс, помечается анн�
 
 `required = false` означает, что если мы передаем праваметры в запросе, то они внедряются в переменные аргумента, если же не передаем параметры в URL, то в этих переменнах будет лежать null.
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/c35475a8-b3ae-4f3d-80c1-37ef060b7b1f)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/5e9e455e-f8dd-4415-bcc9-0cb0050351b5)
+
+метод `addAttribute()` - специальный метод, с помощью которого мы можем положить в модель пару ключ-значение, эта модель будет отправлена на представление, где с помощью шаблонизатора мы сможем получить значения по ключу.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/5cd8e8f3-bf85-4c84-a0fa-68b611f9e62f)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/5dd9fd09-695b-41d3-a98c-ba9d9dd32b71)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/df1aa464-75f8-4a89-9e0d-8bc8528a5067)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/80ad2757-bc47-40ab-9291-c00417616864)
+
+Это URL по стандартам. Хоть сущность называется в единственном числе - `Post`, но при запросе GET мы получаем все все записи для этой сущности, поэтому URL во множественном числе - `/posts`.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/b0767475-ce5f-4013-8e2a-c97331e7a6cc)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/8130d5c5-cc15-4e79-ac78-30762659a5aa)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/5d8e5191-75c2-475d-9290-263531044df9)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/2fbf0b75-fb1b-4bf5-b33f-bf697be77fe5)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/b0088879-a8bc-458e-8b12-d04fd1812a62)
 
 
 
