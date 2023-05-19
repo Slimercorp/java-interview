@@ -696,18 +696,9 @@ __Класс помеченный аннотацией `@SpringBootApplication` 
 
 так же тут конфигурируются Security, Spring Data JPA, Hibernate, БД и т.д.
 
+Или так, например:
 
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/ed1dcdf3-a0fe-4c46-8d8e-d11d16f5ccac)
 
 
 
@@ -717,7 +708,83 @@ __Класс помеченный аннотацией `@SpringBootApplication` 
 
 ## Spring Security
 
+
+
+
+
 ## Spring REST
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/000dd50c-f0d8-4bbb-9412-7f13a5ab3a87)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9862d01e-108d-4965-8f37-a76776f2033d)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/26a46ffd-b613-4f59-a963-4fe89737288d)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/7facc92a-433b-40f9-9a16-4283ddcfc56a)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/781d89ac-e90c-4c83-8506-325e6c5ea294)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/86c70134-e416-4b7f-a9ec-c05328801765)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/1c3c029e-f9fc-410e-a744-0e5c7f0004c6)
+
+В JSON'е данные в виде пар ключ-значение. Мы не можем напрямую использовать JSON в нашем Java приложении, потому что это строка с ключами и значениями, в JavaScript мы можем использовать его напрямую, потому что JSON пришел из языка JavaScript, но в Java мы не можем обратиться напрямую к ключу и получить знаечние, но мы можем JSON перевести в Java объект: ключ в JSON - это поле ы Java объекте. Для того что бы конвертировать JSON в Java объекты и наоборот мы используем библиотеку __Jackson__.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/380f4bbb-0c7d-4b45-856e-0c703bfeeee6)
+
+Для всех полей Java класса должны быть сеттеры и геттеры, потому что Jackson работает именно с ними.
+
+`RestTemplate` - класс (из библиотеки Spring Web) для запросов к стороннему REST API сервису. У этого класса есть методы соответствующие каждому http методу : `getForObject()`, `postForObject()`, `putForObject()` и т.д.
+`HttpHeaders` - класс из библиотеки Spring для передачи заголовков.
+
+Подключимся к переводчику Яндекса, и будем переводить текст, введенный пользователем в консоль.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/41edca8c-d802-46bf-bf23-ee6e35b891f7)
+
+Ответ:
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/a194137f-5077-4d37-9eb9-3fbea78389fd)
+
+`ObjectMapper`- класс, с чьей помощью мы можем распарсить любую строчку JSON.
+`JsonNode` - JSON, который уже был распаршен.
+Яндекс нам вернул массив из переводов под названием `translations`.
+Что бы получить только перевод нашего текста, а не весь JSON, получим первый элемент в этом массиве и в этом объекте получаем ключ - "text".
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/594cb818-1f32-4f59-9a7d-0a3d08e77f7d)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/09424ab9-9730-47be-baed-7f08b5efec9d)
+
+
+Обычно структура JSON'а обговаривается, которая будет передаваться и приходить, и она всегда одна, и она обычно не меняется. Обмен JSON'ами происходит много раз и что бы не парсить каждый раз через `ObjectMapper`, можно создать Java класс и Jackson будет автоматически JSON в объект этого Java класса.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9eddf3ce-d8ac-4c1f-9960-d07e1f9f373c)
+
+Класс для каждогоэлемента массива `translations`: ![image](https://github.com/Slimercorp/java-interview/assets/116163780/fdd223f0-0d1c-4ed5-81df-ceb4a8ece626)
+
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/3f61fe03-6118-4467-bc90-ae5f90da8396)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9477fc43-66d2-422c-94d0-814c4ac9c701)
+
+И теперь объект, который вернется от Яндекса мы помещаем не в String, а в объект нашего класса `YandexResponse`.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/c91a5a57-2e6d-4334-9e87-55f62dce0fa2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## JWT
 
