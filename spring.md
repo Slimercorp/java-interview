@@ -700,13 +700,67 @@ __Класс помеченный аннотацией `@SpringBootApplication` 
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/ed1dcdf3-a0fe-4c46-8d8e-d11d16f5ccac)
 
-
-
-
-
-
-
 ## Spring Security
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/71ff23f9-34db-4532-817b-a0096379e327)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/15d82455-902c-4ba9-95b6-da05921c1b1b)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/0d0f7d11-61fd-4299-b225-48bda0469e2f)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/e70c6bae-af11-4d70-b6f3-62315ed97e15)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/36b71167-c6fc-485f-9543-0365afa937b9)
+
+Когда мы хотим реализовать аутентификацию в Spring Security, мы должны создать класс, который реализует интерфейс `AuthenticationProvider`, в этом интерфейсе есть одна сигнатура `authenticate`, в реализации этого метода мы описываем логику аутентификации пользователя. Этому методу на вход подается объект `Authetication` и возвращает это метод тоже объект `Authetication`.  То есть этот объект несет в себе логин и пароль пользователя (`credentials` на схеме выше), когда он пытается аутентифицироваться. `Principal` - объект, который получается на выходе и несет в себе данные о пользователе, который только что прошел успешную аутентификацию (имя, фвмилия, дата рождения и т.д.). 
+
+Т.к. у нас могут быть разные способы аутентификации (обращение к БД, обращение к стороннему серверу...), то в приложении может быть несколько `AutheticationProvider`'ов каждый со своей реализацией метода `authenticate()`.
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/5973cdad-3752-4210-b651-75f304805257)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/26d19d85-2871-4559-993e-5b33e58794a2)
+
+## Session
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/7292e35c-3b87-40e2-8158-864632774645)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/7f7f1b9e-4719-4b7e-8df4-be0210d0a6ec)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/6324264f-b273-499d-83ea-293e62ceb880)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -827,27 +881,6 @@ __@RequestBody__
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## JWT
-
-
-
-
-
-
-
-
-
-
 
 
