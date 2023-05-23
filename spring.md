@@ -770,6 +770,52 @@ __Класс помеченный аннотацией `@SpringBootApplication` 
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/c91a5a57-2e6d-4334-9e87-55f62dce0fa2)
 
+__@ResponseBody__ - главная аннотация для создания REST приложений. Spring понимает, что мотод помеченный этой аннотацией, не возвращает название для представления, в этом методе возвращаются какие-то данны (в примере возвращается просто объект класса String). Эта аннотация говорит что не нужно искать представление с названием "Hello world!", нужно просто вернуть такую строку при переходе на адрес /api/sayHello
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/94e1c2ba-dc88-43a5-a41a-1eaa5b4e0bde)
+
+Здесь, если бы не было @ResponseBody, то Spring искал бы представление с названием "Hello world!" в папке 'templates'.
+
+__@RestController__ - специальная аннотация, которая сокращает количество кода. @Controller + @ResponseBody = эта аннотация означает, что каждый метод в этом контроллере имеет аннотацию @ResponseBody и ее не надо писать над методами
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/491ec908-0129-43b7-b4ba-4b9abcfafe52)
+
+__@ExceptionHandler__ - этой аннотацией помечается метод, который ловит исключения и возвращает необходимый JSON(объект).
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/01900bfc-b5de-43a0-b7a5-3a66eb9d15c0)
+
+`ResponseEntity` - обертка объекта `response`. В `ResponseEntity` указываем тело HTTP ответа - `response` и статус `HttpStatus.NOT_FOUND`.
+
+## Прием данных
+__@RequestBody__
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/b1493868-3645-4af7-aa25-7196e8e9750b)
+
+@RequestBody помечает параметр в методе контроллера, и когда мы пришлем JSON в этот метод, @RequestBody автоматически сконвертирует его в объект указанного класса (в нашем случае Person).
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/ce7b5e55-bd7d-4daa-9dbd-b466d14d64de)
+
+
+## DTO (Data Transfer Object)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/67ab6301-3806-4211-a197-dd4e94dce9d7)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/862e014e-9564-42a2-ac3d-6fa8cee5ca5b)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/fb947be7-bfc2-4198-91bd-aaf40267f9ab)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/c5f51b97-61d0-45c9-88a3-cdc25942d6a8)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
