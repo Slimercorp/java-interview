@@ -806,13 +806,19 @@ __@RequestBody__
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/c5f51b97-61d0-45c9-88a3-cdc25942d6a8)
 
+## ModelMapper
 
+`ModelMapper` - класс, который позволяет DTO переделывать в модель и наоборот. Необходимо недрить зависимость `ModelMapper` что бы использовать этот класс. Методу `map()` этого класса передаем исходный объект и класс, в который хотим переделать исходный объект. `ModelMapper` найдет все поля, которые совпадают по названию и в новый объект положит все опля из исходного объекта.
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9be0f761-7ecd-4384-aef3-c61a7f339a03)
 
+Этот способ обычно используется много раз в разных местах в приложении, и что бы не создавать каждый раз новый объект можно создать бин в конфигурационном файле приложения и внедряем его с помощью Spring в контроллер.
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9f38aca6-8f74-404e-8f9f-b500fdedb813)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/ab89f579-5b7a-4aaf-b6e9-d45d0f7aa7c4)
 
-
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/6a0cc8ef-befa-4e5e-89b8-9d1d5e9182ae)
 
 
 
