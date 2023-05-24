@@ -728,10 +728,19 @@ __Класс помеченный аннотацией `@SpringBootApplication` 
 
 ![image](https://github.com/Slimercorp/java-interview/assets/116163780/6324264f-b273-499d-83ea-293e62ceb880)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/4e1c199c-182d-424e-8e49-d1fe513f2462)
 
+## Cookie
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/791892e0-857d-4cc0-b7f1-ef2d3b0915d5)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/efc59e84-845c-4b79-b09a-ec0f5cf14fe9)
 
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/9ae784f1-871c-4302-89bb-de82b08d1c6e)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/24347d2e-505b-41f8-a45e-889d502d6bf6)
+
+![image](https://github.com/Slimercorp/java-interview/assets/116163780/200c7076-1e03-44ff-bd5b-65d8a61adead)
 
 
 
